@@ -3,7 +3,7 @@ def swapLetters():
 	letterOne=letters[0].lower()
 	letterTwo=letters[1].lower()
 	
-	while len(letters)!=2 or letterOne.isnumeric()==True or letterTwo.isnumeric()==True or letterOne==letterTwo:
+	while len(letters)!=2 or letterOne==letterTwo:
 		letters=input("Please enter two different letters.\n")
 		letterOne=letters[0].lower()
 		letterTwo=letters[1].lower()
@@ -12,4 +12,3 @@ def swapLetters():
 def swapMessage():
 	message=input("What message would you like to swap?\n")
 	return message
-
