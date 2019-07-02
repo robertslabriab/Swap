@@ -9,7 +9,3 @@ def swapper(letters,message):
 			msg[x]=letterOne
 	msg="".join(msg)
 	return msg
-
-
-#cd\Portfolio\swap
-#swapper.py

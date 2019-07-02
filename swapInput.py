@@ -7,15 +7,9 @@ def swapLetters():
 		letters=input("Please enter two different letters.\n")
 		letterOne=letters[0].lower()
 		letterTwo=letters[1].lower()
-		
-		#make sure to delete in final form
-		if letters=="break":
-			break
 	return letters
 
 def swapMessage():
 	message=input("What message would you like to swap?\n")
 	return message
 
-#cd\Portfolio\swap
-#swapInput.py
