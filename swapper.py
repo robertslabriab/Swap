@@ -4,8 +4,14 @@ def swapper(letters,message):
 	msg=list(message)
 	for x in range(len(msg)):
 		if msg[x].lower()==letterOne:
-			msg[x]=letterTwo
+			if msg[x]==letterOne.upper():
+				msg[x]=letterTwo.upper()
+			else:
+				msg[x]=letterTwo
 		elif msg[x].lower()==letterTwo:
-			msg[x]=letterOne
+			if msg[x]==letterTwo.upper():
+				msg[x]=letterOne.upper()
+			else:
+				msg[x]=letterOne
 	msg="".join(msg)
 	return msg
