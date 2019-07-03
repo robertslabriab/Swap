@@ -1,17 +1,14 @@
-import swapInput,swapper,key
+import swapInput,swapper,key,swappingWithKeys
 def swapping():
 	positiveAnswer=["yes","y"]
 	negativeAnswer=["no","n"]
 	haveKey=input("Do you have a key?\n")
 	if haveKey.lower() in positiveAnswer:
-		keyList=key.keyFob()
-		tracker=0
-		while tracker<len(keyList):
-			if tracker==0:
-				swappedMessage=swapper.swapper(keyList[tracker],swapInput.swapMessage())
-			else:
-				swappedMessage=swapper.swapper(keyList[tracker],swappedMessage)
-			tracker+=1
+		recieveKey=input("Did you recieve the key?\n")
+		if recieveKey.lower() in positiveAnswer:
+			swappedMessage=swappingWithKeys.unswap()
+		else:
+			swappedMessage=swappingWithKeys.swapUsingKey()
 	else:
 		swappedMessage=swapper.swapper(swapInput.swapLetters(),swapInput.swapMessage())
 	print(swappedMessage)
