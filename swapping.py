@@ -1,6 +1,5 @@
 import swapInput,swapper,key
 def swapping():
-
 	positiveAnswer=["yes","y"]
 	negativeAnswer=["no","n"]
 	haveKey=input("Do you have a key?\n")
