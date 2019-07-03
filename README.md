@@ -1,6 +1,12 @@
-SWAP
-swaps letters/numbers in a message. input two letters/numbers to form a pair, the letter/number in the pair will then be swapped in the message.
+## SWAP ##
+Swaps the characters in a message. Multiple characters can be swapped multiple times. Two characters are swapped at a time. A key is made up of one pair of characters, multiple keys can be used to further swap up a message
 
-    message: An example of swap
-	pair: AE
-    swap: En axempla of swep 
+    Message: An example of swap
+    \# of Keys: 1
+    Keys: AE
+    Swapped Message: En axempla of swep
+
+    Message: An example of swap
+    \# of Keys: 5
+    Keys: AN, AE, X1, SW, 2F
+    Swapped Message: Ne a1nmpla o2 wsnp
